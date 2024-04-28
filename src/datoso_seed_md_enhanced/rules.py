@@ -10,14 +10,14 @@ rules = [
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': '32X'
+                'value': '32X',
             },
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'MD+'
-            }
-        ]
+                'value': 'MD+',
+            },
+        ],
     },
     {
         'name': '32X MSU-MD Dat',
@@ -28,14 +28,14 @@ rules = [
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': '32X'
+                'value': '32X',
             },
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'MSU-MD'
-            }
-        ]
+                'value': 'MSU-MD',
+            },
+        ],
     },
     {
         'name': 'Sega CD Hacks Dat',
@@ -46,9 +46,9 @@ rules = [
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'Mega CD Hacks'
-            }
-        ]
+                'value': 'Mega CD Hacks',
+            },
+        ],
     },
     {
         'name': 'Mega Drive Enhanced Colors Dat',
@@ -59,14 +59,14 @@ rules = [
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'Mega Drive'
+                'value': 'Mega Drive',
             },
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'Enhanced Colors'
-            }
-        ]
+                'value': 'Enhanced Colors',
+            },
+        ],
     },
     {
         'name': 'Mega Drive MD+ Dat',
@@ -77,14 +77,14 @@ rules = [
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'Mega Drive'
+                'value': 'Mega Drive',
             },
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'MD+'
-            }
-        ]
+                'value': 'MD+',
+            },
+        ],
     },
     {
         'name': 'Mega Drive Mode 1 CD Dat',
@@ -95,14 +95,14 @@ rules = [
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'Mega Drive'
+                'value': 'Mega Drive',
             },
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'Mode 1 CD'
-            }
-        ]
+                'value': 'Mode 1 CD',
+            },
+        ],
     },
     {
         'name': 'Mega Drive MSU-MD Dat',
@@ -113,15 +113,15 @@ rules = [
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'Mega Drive'
+                'value': 'Mega Drive',
             },
             {
                 'key': 'name',
                 'operator': 'contains',
-                'value': 'MSU-MD'
-            }
-        ]
-    }
+                'value': 'MSU-MD',
+            },
+        ],
+    },
 ]
 
 

@@ -1,14 +1,17 @@
 import re
+
 from datoso.configuration import config
 from datoso.repositories.dat import XMLDatFile
 
+
 class MdEnhancedDat(XMLDatFile):
-    """ MegaDrive Enhanced Colors Dat class. """
+    """MegaDrive Enhanced Colors Dat class."""
+
     seed: str = 'md_enhanced'
 
     def initial_parse(self):
         # pylint: disable=R0801
-        """ Parse the dat file. """
+        """Parse the dat file."""
         name = self.name
 
         name_array = name.split(' - ')
@@ -22,16 +25,16 @@ class MdEnhancedDat(XMLDatFile):
         self.overrides()
 
         if self.modifier or self.system_type:
-            self.preffix = config.get('PREFFIXES', self.modifier or self.system_type, fallback='')
+            self.prefix = config.get('PREFIXES', self.modifier or self.system_type, fallback='')
         else:
-            self.preffix = None
+            self.prefix = None
 
-        return [self.preffix, self.company, self.system, self.suffix, self.get_date()]
+        return [self.prefix, self.company, self.system, self.suffix, self.get_date()]
 
 
     def get_date(self):
-        """ Get the date from the dat file. """
+        """Get the date from the dat file."""
         if self.file:
-            result = re.findall(r'\(.*?\)', self.file)
+            result = re.findall(r'\(.*?\)', str(self.file))
             self.date = result[len(result)-1][1:-1]
         return self.date
