@@ -15,11 +15,15 @@ class MdEnhancedDat(XMLDatFile):
         name = self.name
 
         name_array = name.split(' - ')
-        if len(name_array) == 2:
-            company, system = name_array
-        if len(name_array) == 3:
-            company, system, suffix = name_array
-            self.suffix = suffix
+        match len(name_array):
+            case 1:
+                company = None
+                system = name_array[0]
+            case 2:
+                company, system = name_array
+            case 3 | 4 | 5:
+                company, system, *suffix = name_array
+                self.suffix = suffix
         self.company = company
         self.system = system
         self.overrides()
