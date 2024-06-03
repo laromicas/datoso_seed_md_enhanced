@@ -1,3 +1,4 @@
+"""Rules for the Mega Drive Enhanced seed."""
 from datoso_seed_md_enhanced.dats import MdEnhancedDat
 
 rules = [
@@ -125,5 +126,6 @@ rules = [
 ]
 
 
-def get_rules():
+def get_rules() -> list:
+    """Get the rules."""
     return rules
