@@ -1,5 +1,6 @@
 ![Datoso](https://github.com/laromicas/datoso/blob/master/bearlogo.png)
 
+# DEPRECATED - check [datoso_seed_enhanced](https://github.com/laromicas/datoso_seed_enhanced)
 # Datoso Seed MegaDrive Enhanced
 
 Datoso is a WIP Python command line tool to download and organize your Dat Roms.
